@@ -12,7 +12,7 @@ const oAuth2Strategy = require('passport-google-oauth2').Strategy;
 
 
 const app = express()
-const PORT = 8000;
+const PORT = process.env.PORT || 8000 ;
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
